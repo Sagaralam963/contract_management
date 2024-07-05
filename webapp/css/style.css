@@ -1,0 +1,435 @@
+/* Enter your custom styles here */
+
+.sapMBarRight {
+    line-height: 0.75rem;
+}
+
+.Title {
+    font-size: larger;
+    font-weight: bolder;
+    color: black !important;
+}
+
+.user_class {
+    font-family: monospace;
+}
+
+.user_status_class {
+    color: #afafaf;
+
+}
+
+.padding_Class {
+    padding: 0 24px;
+}
+
+.pannel_input_class>div {
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.HBox_Class {
+    padding-left: 40px;
+
+}
+
+.Header_Padding_class {
+    padding: 10px 10px 10px 10px;
+}
+
+.Header_Padding_class>div {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #ffffff;
+    box-shadow: 6px 4px 8px 1px #e2e2e2;
+    padding: 0 0 3px 0;
+
+}
+
+
+/*   Search Button */
+
+.search_but_class>span {
+    background: rgb(242, 104, 34);
+    color: #ffffff;
+    border-color: rgb(242, 104, 34);
+    width: 70px;
+    height: 28px;
+}
+
+.search_but_class>span>span {
+    line-height: 27px;
+}
+
+.search_but_class>span:hover {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+    width: 70px !important;
+    height: 28px !important;
+}
+
+.search_but_class:hover>span {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+    width: 70px !important;
+    height: 28px !important;
+}
+
+
+/*  Search Button End */
+
+/*   Clear Button */
+
+.clear_but_class>span {
+    background: rgb(194 194 194);
+    color: #030303;
+    border-color: rgb(194 194 194);
+    width: 70px;
+    height: 28px;
+}
+
+.clear_but_class>span>span {
+    line-height: 27px;
+}
+
+.clear_but_class>span:hover {
+    background: rgb(194 194 194) !important;
+    color: #030303 !important;
+    border-color: rgb(194 194 194) !important;
+    width: 70px !important;
+    height: 28px !important;
+}
+
+.clear_but_class:hover>span {
+    background: rgb(194 194 194) !important;
+    color: #030303 !important;
+    border-color: rgb(194 194 194) !important;
+    width: 70px !important;
+    height: 28px !important;
+}
+
+
+/*  Clear Button End */
+
+
+/*   update Button */
+
+.update_but_class>span {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+}
+
+.update_but_class>span:hover {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+}
+
+.update_but_class:hover>span {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+}
+
+
+/*  update Button End */
+
+/*   close Button */
+
+.close_but_class>span {
+    background: rgb(194 194 194) !important;
+    color: #030303 !important;
+    border-color: rgb(194 194 194) !important;
+    font-weight: bolder;
+}
+
+.close_but_class>span:hover {
+    background: rgb(194 194 194) !important;
+    color: #030303 !important;
+    border-color: rgb(194 194 194) !important;
+    font-weight: bolder;
+}
+
+.close_but_class:hover>span {
+    background: rgb(194 194 194) !important;
+    color: #030303 !important;
+    border-color: rgb(194 194 194) !important;
+    font-weight: bolder;
+}
+
+
+/*  close Button End */
+
+/*   request Button */
+
+.request_but_class>span {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+    width: 111px !important;
+}
+
+.request_but_class>span:hover {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+}
+
+.request_but_class:hover>span {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+}
+
+
+/*  Add Button End */
+
+
+/*   Add Button */
+
+.add_but_class>span {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+    width: 100px !important;
+}
+
+.add_but_class>span:hover {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+}
+
+.add_but_class:hover>span {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+}
+
+
+/*  Add Button End */
+
+/*   Update2 Button */
+
+.update2_but_class>span {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+    width: 100px !important;
+}
+
+.update2_but_class>span:hover {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+}
+
+.update2_but_class:hover>span {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+}
+
+
+/*  Update2 Button End */
+
+/* Add Filter Button*/
+
+
+.add_filter_but_class>span {
+    background: rgb(242, 104, 34);
+    color: #ffffff;
+    border-color: rgb(242, 104, 34);
+    width: 90px;
+    height: 28px;
+}
+
+.add_filter_but_class>span>span {
+    line-height: 27px;
+}
+
+.add_filter_but_class>span:hover {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+    width: 90px !important;
+    height: 28px !important;
+}
+
+.add_filter_but_class:hover>span {
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+    border-color: rgb(242, 104, 34) !important;
+    width: 90px !important;
+    height: 28px !important;
+}
+
+/* Add Filter Button End*/
+
+.dialog_title_class>header>div>div>div>div {
+    justify-content: center !important;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.dialog_title_class>header>div>div>div>div>h1 {
+    color: #000000;
+    font-weight: bolder;
+}
+
+/*Icon Tab Bar*/
+.Icon_Tab_class>div>div>div>div>div>div {
+    padding: 0 0 0 0.5rem !important;
+}
+
+.Icon_Tab_class>div>div>div>div>div>span {
+
+    /*background: transparent !important;*/
+    color: #cdcdcd !important;
+    border: none !important;
+}
+
+
+.sapMITBSelected .sapMITBContentArrow::after {
+    background: transparent !important;
+}
+
+.sapMITBSelected .sapMITBFilterDefault {
+    background: rgb(242, 104, 34);
+    color: #fff;
+}
+
+/* Icon Tab Ends*/
+
+/* Panel Tab Button*/
+
+.Tab_btn>span {
+    border: none;
+}
+
+.Tab_btn>span>span {
+    color: rgb(242, 104, 34);
+}
+
+.Tab_btn>span>bdi {
+    color: rgb(242, 104, 34);
+}
+
+.Tab_btn:hover>span>span {
+    color: rgb(242, 104, 34) !important;
+}
+
+.Tab_btn:hover>span {
+    border: none !important;
+    color: rgb(242, 104, 34) !important;
+}
+
+
+/**/
+.Selected_Tab_btn>span {
+    border: none;
+    background: rgb(242, 104, 34);
+}
+
+.Selected_Tab_btn>span>span {
+    color: #ffffff;
+}
+
+.Selected_Tab_btn>span>bdi {
+    color: #ffffff;
+}
+
+.Selected_Tab_btn:hover>span>span {
+    color: #ffffff !important;
+}
+
+.Selected_Tab_btn:hover>span {
+    border: none !important;
+    background: rgb(242, 104, 34) !important;
+    color: #ffffff !important;
+}
+
+/* Panel Tab button End*/
+
+.input_lenght_class {
+
+    height: 30px !important;
+}
+
+.input_lenght_class>div>div>span::before {
+
+    line-height: 1.8rem !important;
+}
+
+.Datepick_lenght_class {
+    width: 120% !important;
+    max-width: none !important;
+    height: 15px !important;
+}
+
+
+/*.Datepick_lenght_class>div>div>span {*/
+/*    line-height: 12px !important;*/
+/*}*/
+
+/*.Datepick_lenght_class>div>div>span::before {*/
+/*    font-size: 13px;*/
+/*}*/
+
+
+.Form_Vbox_class {
+    padding-bottom: 18px;
+}
+
+.Form_Vbox_class>div {
+    height: 28px !important;
+}
+
+.Form_Input_class>div {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.Form_TextArea_class>div {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 39rem !important;
+    height: 70px !important;
+}
+
+/* Dialog Box */
+
+.sapMPopup-CTX .sapMIBar.sapMHeader-CTX {
+    background-color: rgb(255 132 69);
+    filter: none;
+    background-image: none;
+}
+
+/* Dialog Box End*/
+
+.Form_padding_class {
+    min-height: 0 !important;
+    padding-top: 12px !important;
+    padding-bottom: 0px !important;
+}
+
+/*  UI Table */
+
+.Ui_table_class {}
+
+/*  UI Table End*/
+
+
+.notif_bell_class {}

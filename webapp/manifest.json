@@ -1,0 +1,119 @@
+{
+  "_version": "1.59.0",
+  "sap.app": {
+    "id": "com.crave.contractmanager",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.13.3",
+      "toolsId": "94285370-85d1-4cb7-8892-f74d447783fb"
+    },
+    "dataSources": {
+			"model": {
+				"uri": "model/tabledata.json",
+				"type": "JSON"
+			}
+		}
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.125.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.crave.contractmanager.i18n.i18n"
+        }
+      },
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "model"
+			},
+			"filter_model": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "filter"
+			}
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "com.crave.contractmanager.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "landing",
+          "pattern": "",
+          "target": [
+            "landing"
+          ]
+        }
+      ],
+      "targets": {
+        "landing": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "landing",
+          "viewName": "landing"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "com.crave.contractmanager.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

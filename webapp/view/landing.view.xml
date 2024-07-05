@@ -1,0 +1,829 @@
+<mvc:View controllerName="com.crave.contractmanager.controller.landing" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:t="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns:c="sap.ui.core" xmlns:m="sap.m" xmlns:l="sap.ui.layout" height="100%">
+	<m:Page showHeader="false" enableScrolling="false" class="sapUiContentPadding">
+		<m:content>
+			<m:Bar class="Toolbarclr">
+				<m:contentLeft>
+					<m:Image src="./image/crave_logo_new.png" class="sapUiTinyMarginBottom" width="80px"></m:Image>
+				</m:contentLeft>
+				<m:contentMiddle>
+					<m:ToolbarSpacer/>
+					<m:Title id="InciListID" text="Contract Mangement Console" class="Title" level="H3"></m:Title>
+					<m:ToolbarSpacer/>
+				</m:contentMiddle>
+				<m:contentRight>
+					<m:ComboBox id="role_id" selectedKey="CA" change="onRole_change">
+						<c:Item text="CA" key="CA"/>
+						<c:Item text="AC" key="AC"/>
+						<c:Item text="PM" key="PM"/>
+						<c:Item text="C" key="C"/>
+					</m:ComboBox>
+					<m:Button id="BellID" class="whiteBtn sapUiSizeCompact" icon="sap-icon://bell" text="0" tooltip="notifications" press="onBellPress"
+						iconFirst="false"/>
+					<m:VBox>
+						<m:Text text="Jhon Doe" class="user_class"/>
+						<m:Text text="Available" class="user_status_class"/>
+					</m:VBox>
+					<m:Image src="./image/user.png" class="sapUiTinyMarginBottom" width="35px"></m:Image>
+				</m:contentRight>
+			</m:Bar>
+			<!-- Bar Ended-->
+			<!-- Panel Start-->
+			<!--<m:Panel class="Header_Padding_class">-->
+			<!--	<m:VBox class="sapUiTinyMarginTop">-->
+			<!--		<m:HBox width="100%" class="HBox_Class">-->
+			<!--			<m:VBox class="padding_Class">-->
+			<!--				<m:Label text="Customer Name"/>-->
+			<!--				<m:Input class="input_lenght_class pannel_input_class" placeholder="Enter customer name" showSuggestion="true" suggestionItems="{/data}">-->
+			<!--					<m:suggestionItems>-->
+			<!--						<c:ListItem text="{consultant_name}"/>-->
+			<!--					</m:suggestionItems>-->
+			<!--				</m:Input>-->
+			<!--			</m:VBox>-->
+			<!--			<m:VBox class="padding_Class">-->
+			<!--				<m:Label text="Project Name"/>-->
+			<!--				<m:Input class="input_lenght_class pannel_input_class" placeholder="Enter customer name" showSuggestion="true" suggestionItems="{/data}">-->
+			<!--					<m:suggestionItems>-->
+			<!--						<c:ListItem text="{consultant_name}"/>-->
+			<!--					</m:suggestionItems>-->
+			<!--				</m:Input>-->
+			<!--			</m:VBox>-->
+			<!--			<m:VBox class="padding_Class">-->
+			<!--				<m:Label text="Client Name"/>-->
+			<!--				<m:Input class="input_lenght_class pannel_input_class" placeholder="Enter customer name" showSuggestion="true" suggestionItems="{/data}">-->
+			<!--					<m:suggestionItems>-->
+			<!--						<c:ListItem text="{consultant_name}"/>-->
+			<!--					</m:suggestionItems>-->
+			<!--				</m:Input>-->
+			<!--			</m:VBox>-->
+			<!--			<m:VBox class="padding_Class">-->
+			<!--				<m:Label text="Vendor Name"/>-->
+			<!--				<m:Input class="input_lenght_class pannel_input_class" placeholder="Enter customer name" showSuggestion="true" suggestionItems="{/data}">-->
+			<!--					<m:suggestionItems>-->
+			<!--						<c:ListItem text="{consultant_name}"/>-->
+			<!--					</m:suggestionItems>-->
+			<!--				</m:Input>-->
+			<!--			</m:VBox>-->
+			<!--		</m:HBox>-->
+			<!--		<m:HBox width="100%" class="HBox_Class sapUiTinyMarginTop">-->
+			<!--			<m:VBox class="padding_Class">-->
+			<!--				<m:Label text="From Date"/>-->
+			<!--<m:ComboBox class="input_lenght_class pannel_input_class"/>-->
+			<!--				<m:Input class="input_lenght_class pannel_input_class" placeholder="Enter customer name" showSuggestion="true" suggestionItems="{/data}">-->
+			<!--					<m:suggestionItems>-->
+			<!--						<c:ListItem text="{consultant_name}"/>-->
+			<!--					</m:suggestionItems>-->
+			<!--				</m:Input>-->
+			<!--			</m:VBox>-->
+			<!--			<m:VBox class="padding_Class">-->
+			<!--				<m:Label text="To Date"/>-->
+			<!--				<m:Input class="input_lenght_class pannel_input_class" placeholder="Enter customer name" showSuggestion="true" suggestionItems="{/data}">-->
+			<!--					<m:suggestionItems>-->
+			<!--						<c:ListItem text="{consultant_name}"/>-->
+			<!--					</m:suggestionItems>-->
+			<!--				</m:Input>-->
+			<!--			</m:VBox>-->
+			<!--			<m:VBox class="padding_Class">-->
+			<!--				<m:Label text="Invoice Status"/>-->
+			<!--				<m:Input class="input_lenght_class pannel_input_class" placeholder="Enter customer name" showSuggestion="true" suggestionItems="{/data}">-->
+			<!--					<m:suggestionItems>-->
+			<!--						<c:ListItem text="{consultant_name}"/>-->
+			<!--					</m:suggestionItems>-->
+			<!--				</m:Input>-->
+			<!--			</m:VBox>-->
+			<!--			<m:VBox class="padding_Class">-->
+			<!--				<m:Label text="PM Name"/>-->
+			<!--				<m:Input class="input_lenght_class pannel_input_class" placeholder="Enter customer name" showSuggestion="true" suggestionItems="{/data}">-->
+			<!--					<m:suggestionItems>-->
+			<!--						<c:ListItem text="{consultant_name}"/>-->
+			<!--					</m:suggestionItems>-->
+			<!--				</m:Input>-->
+			<!--			</m:VBox>-->
+			<!--		</m:HBox>-->
+			<!--		<m:HBox width="100%" justifyContent="Center">-->
+			<!--			<m:Button text="Search" class="padding_Class search_but_class"/>-->
+			<!--			<m:Button text="Clear" class="padding_Class clear_but_class"/>-->
+			<!--		</m:HBox>-->
+			<!--	</m:VBox>-->
+			<!--</m:Panel>-->
+			<!-- Panel End-->
+			<!-- Panel Start-->
+			<m:Panel id="dynamic_Fliter_pannel" class="Header_Padding_class">
+				<m:VBox class="sapUiTinyMarginTop">
+					<m:HBox width="100%" class="HBox_Class sapUiTinyMarginTop">
+						<m:VBox class="padding_Class">
+							<m:Label text="Consultant Name" visible="false"/>
+							<m:MultiComboBox width="200px" items="{ path: '/data'}" placeholder="Consultant Name">
+								<c:Item key="{consultant_name}" text="{consultant_name}"/>
+							</m:MultiComboBox>
+						</m:VBox>
+						<m:VBox class="padding_Class">
+							<m:Label text="Project Name" visible="false"/>
+							<m:MultiComboBox width="200px" items="{ path: '/data'}" placeholder="Project Name">
+								<c:Item key="{project_name}" text="{project_name}"/>
+							</m:MultiComboBox>
+						</m:VBox>
+						<m:VBox class="padding_Class">
+							<m:Label text="Project Manager" visible="false"/>
+							<m:MultiComboBox width="200px" items="{ path: '/data'}" placeholder="Project Manager">
+								<c:Item key="{project_manager}" text="{project_manager}"/>
+							</m:MultiComboBox>
+						</m:VBox>
+						<m:VBox class="padding_Class">
+							<m:Label text="Billability type" visible="false"/>
+							<m:MultiComboBox width="200px" items="{ path: '/data'}" placeholder="Billability type">
+								<c:Item key="{billability_type}" text="{billability_type}"/>
+							</m:MultiComboBox>
+						</m:VBox>
+					</m:HBox>
+					<m:HBox width="100%" class="HBox_Class sapUiTinyMarginTop"></m:HBox>
+					<m:HBox width="100%" class="HBox_Class sapUiTinyMarginTop"></m:HBox>
+					<m:HBox justifyContent="Center">
+						<m:Button text="Add Filter" class="padding_Class add_filter_but_class" press="on_Add_filter_btn"/>
+						<m:Button text="Search" press="onSearch_btn" class="padding_Class search_but_class"/>
+						<m:Button text="Clear" class="padding_Class clear_but_class" press="onClear_Filter"/>
+					</m:HBox>
+					<!--<m:MultiComboBox width="350px" items="{ path: '/data', sorter: { path: 'consultant_name' } }">-->
+					<!--	<c:Item key="{consultant_name}" text="{consultant_name}"/>-->
+					<!--</m:MultiComboBox>-->
+				</m:VBox>
+			</m:Panel>
+			<!-- Panel End-->
+			<m:Panel class="Header_Padding_class">
+				<m:HBox class="sapUiTinyMarginBegin" justifyContent="SpaceBetween">
+					<m:HBox class="sapUiTinyMarginBegin">
+						<m:Button iconFirst="true" class="sapUiTinyMarginBegin Selected_Tab_btn" press="onTab_btn" text="Profile" icon="sap-icon://account"/>
+						<m:Button iconFirst="true" class="sapUiTinyMarginBegin Tab_btn" press="onTab_btn" text="Payment Status" icon="sap-icon://wallet"/>
+						<m:Button iconFirst="true" class="sapUiTinyMarginBegin Tab_btn" press="onTab_btn" text="Payment Status" icon="sap-icon://documents"/>
+						<m:Button iconFirst="true" class="sapUiTinyMarginBegin Tab_btn" press="onTab_btn" text="Delivery" icon="sap-icon://shipping-status"/>
+					</m:HBox>
+					<m:HBox class="sapUiTinyMarginBegin sapUiTinyMarginEnd">
+						<m:Button icon="sap-icon://add" press="onRequestBtn" class="sapUiSmallMarginEnd Tab_btn"/>
+						<m:Button icon="sap-icon://excel-attachment" press="onExport_Excel" class="sapUiSmallMarginEnd Tab_btn"/>
+					</m:HBox>
+				</m:HBox>
+			</m:Panel>
+			<!-- CA TABLE -->
+			<t:Table id="tableid" visible="false" class="Ui_table_class" rows="{/data}" selectionMode="Single" selectionChange="onSelectionChange"
+				onRowPress="onRowPress" cellClick="onCellClick" rowSelectionChange="onRowSelectionChange" visibleRowCount="10" visibleRowCountMode="Fixed"
+				ariaLabelledBy="title" enableColumnFreeze="true" fixedColumnCount="2" type="active">
+				<!--<t:extension>-->
+				<!--	<m:OverflowToolbar style="Clear">-->
+				<!--		<m:Button text="create"/>-->
+				<!--	</m:OverflowToolbar>-->
+				<!--</t:extension>-->
+				<t:columns>
+					<t:Column width="11rem" hAlign="Begin">
+						<m:Label text="Consultant Name"/>
+						<t:template>
+							<m:Text text="{consultant_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Vendor Name"/>
+						<t:template>
+							<m:Text text="{vendor_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Client Name"/>
+						<t:template>
+							<m:Text text="{client_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="21rem">
+						<m:Label text="Project Name"/>
+						<t:template>
+							<m:Text text="{project_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Project Manager"/>
+						<t:template>
+							<m:Text text="{project_manager}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Billability Type"/>
+						<t:template>
+							<m:Text text="{billability_type}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Billability Amt/Rate"/>
+						<t:template>
+							<m:Text text="{billability_rate}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Assessment Type"/>
+						<t:template>
+							<m:Text text="{assessment_type}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Requirement"/>
+						<t:template>
+							<m:Text text="{requirment}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Begin">
+						<m:Label text="SOW Status"/>
+						<t:template>
+							<m:Text text="{sow_status}" wrapping="false" class="sapUiTinyMarginBegin"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Onboarding Complete"/>
+						<t:template>
+							<m:Text text="{onboarding_complete}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Ready to Start"/>
+						<t:template>
+							<m:Text text="{ready_to_start}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Work Started"/>
+						<t:template>
+							<m:Text text="{work_started}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Delivery status"/>
+						<t:template>
+							<m:Text text="{delivery_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Estimated Hrs"/>
+						<t:template>
+							<m:Text text="{estimated_hr}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Revised Hrs"/>
+						<t:template>
+							<m:Text text="{revised_hrs}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Consumed Hrs"/>
+						<t:template>
+							<m:Text text="{consumed_hrs}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Balanced Hrs"/>
+						<t:template>
+							<m:Text text="{balanced_hrs}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Timesheet status"/>
+						<t:template>
+							<m:Text text="{timesheet_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="15rem">
+						<m:Label text="Tech.Delivery Approved by (If Req.)"/>
+						<t:template>
+							<m:Text text="{tech_approval}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Delivery Approval By PM"/>
+						<t:template>
+							<m:Text text="{delivery_approval_by_pM}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Invoice Creation By"/>
+						<t:template>
+							<m:Text text="{invoice_creation_by}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Inv. Status"/>
+						<t:template>
+							<m:Text text="{inv_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Payment Status"/>
+						<t:template>
+							<m:Text text="{payment_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Remarks"/>
+						<t:template>
+							<m:Text text="{Remarks}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+			<!-- CA TABLE END -->
+			<!-- AC TABLE -->
+			<t:Table id="tableid_AC" visible="false" class="Ui_table_class" rows="{/data}" selectionMode="Single" selectionChange="onSelectionChange"
+				onRowPress="onRowPress" cellClick="onCellClick" rowSelectionChange="onRowSelectionChange" visibleRowCount="10" visibleRowCountMode="Fixed"
+				ariaLabelledBy="title" enableColumnFreeze="true" fixedColumnCount="3" type="active">
+				<!--<t:extension>-->
+				<!--	<m:OverflowToolbar style="Clear">-->
+				<!--		<m:Button text="create"/>-->
+				<!--	</m:OverflowToolbar>-->
+				<!--</t:extension>-->
+				<t:columns>
+					<t:Column width="11rem" hAlign="Begin">
+						<m:Label text="Consultant Name"/>
+						<t:template>
+							<m:Text text="{consultant_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Vendor Name"/>
+						<t:template>
+							<m:Text text="{vendor_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Client Name"/>
+						<t:template>
+							<m:Text text="{client_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="21rem">
+						<m:Label text="Project Name"/>
+						<t:template>
+							<m:Text text="{project_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Project Manager"/>
+						<t:template>
+							<m:Text text="{project_manager}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Billability Type"/>
+						<t:template>
+							<m:Text text="{billability_type}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Billability Amt/Rate"/>
+						<t:template>
+							<m:Text text="{billability_rate}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Assessment Type"/>
+						<t:template>
+							<m:Text text="{assessment_type}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Requirement"/>
+						<t:template>
+							<m:Text text="{requirment}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Begin" visible="false">
+						<m:Label text="SOW Status"/>
+						<t:template>
+							<m:Text text="{sow_status}" wrapping="false" class="sapUiTinyMarginBegin"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Onboarding Complete"/>
+						<t:template>
+							<m:Text text="{onboarding_complete}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Ready to Start"/>
+						<t:template>
+							<m:Text text="{ready_to_start}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Work Started"/>
+						<t:template>
+							<m:Text text="{work_started}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Delivery status"/>
+						<t:template>
+							<m:Text text="{delivery_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Estimated Hrs"/>
+						<t:template>
+							<m:Text text="{estimated_hr}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Revised Hrs"/>
+						<t:template>
+							<m:Text text="{revised_hrs}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Consumed Hrs"/>
+						<t:template>
+							<m:Text text="{consumed_hrs}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Balanced Hrs"/>
+						<t:template>
+							<m:Text text="{balanced_hrs}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Timesheet status"/>
+						<t:template>
+							<m:Text text="{timesheet_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="15rem" visible="false">
+						<m:Label text="Tech.Delivery Approved by (If Req.)"/>
+						<t:template>
+							<m:Text text="{tech_approval}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Delivery Approval By PM"/>
+						<t:template>
+							<m:Text text="{delivery_approval_by_pM}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Invoice Creation By"/>
+						<t:template>
+							<m:Text text="{invoice_creation_by}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Inv. Status"/>
+						<t:template>
+							<m:Text text="{inv_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Payment Status"/>
+						<t:template>
+							<m:Text text="{payment_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Remarks"/>
+						<t:template>
+							<m:Text text="{Remarks}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+			<!-- AC TABLE END -->
+			<!-- PM TABLE -->
+			<t:Table id="tableid_PM" visible="false" class="Ui_table_class" rows="{/data}" selectionMode="Single" selectionChange="onSelectionChange"
+				onRowPress="onRowPress" cellClick="onCellClick" rowSelectionChange="onRowSelectionChange" visibleRowCount="10" visibleRowCountMode="Fixed"
+				ariaLabelledBy="title" enableColumnFreeze="true" fixedColumnCount="2" type="active">
+				<!--<t:extension>-->
+				<!--	<m:OverflowToolbar style="Clear">-->
+				<!--		<m:Button text="create"/>-->
+				<!--	</m:OverflowToolbar>-->
+				<!--</t:extension>-->
+				<t:columns>
+					<t:Column width="11rem" hAlign="Begin">
+						<m:Label text="Consultant Name"/>
+						<t:template>
+							<m:Text text="{consultant_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Vendor Name"/>
+						<t:template>
+							<m:Text text="{vendor_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Client Name"/>
+						<t:template>
+							<m:Text text="{client_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="21rem">
+						<m:Label text="Project Name"/>
+						<t:template>
+							<m:Text text="{project_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Project Manager"/>
+						<t:template>
+							<m:Text text="{project_manager}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Billability Type"/>
+						<t:template>
+							<m:Text text="{billability_type}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Billability Amt/Rate"/>
+						<t:template>
+							<m:Text text="{billability_rate}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Assessment Type"/>
+						<t:template>
+							<m:Text text="{assessment_type}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Requirement"/>
+						<t:template>
+							<m:Text text="{requirment}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Begin" visible="false">
+						<m:Label text="SOW Status"/>
+						<t:template>
+							<m:Text text="{sow_status}" wrapping="false" class="sapUiTinyMarginBegin"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Onboarding Complete"/>
+						<t:template>
+							<m:Text text="{onboarding_complete}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Ready to Start"/>
+						<t:template>
+							<m:Text text="{ready_to_start}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Work Started"/>
+						<t:template>
+							<m:Text text="{work_started}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Delivery status"/>
+						<t:template>
+							<m:Text text="{delivery_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Estimated Hrs"/>
+						<t:template>
+							<m:Text text="{estimated_hr}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Revised Hrs"/>
+						<t:template>
+							<m:Text text="{revised_hrs}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Consumed Hrs"/>
+						<t:template>
+							<m:Text text="{consumed_hrs}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Balanced Hrs"/>
+						<t:template>
+							<m:Text text="{balanced_hrs}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Timesheet status"/>
+						<t:template>
+							<m:Text text="{timesheet_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="15rem">
+						<m:Label text="Tech.Delivery Approved by (If Req.)"/>
+						<t:template>
+							<m:Text text="{tech_approval}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Delivery Approval By PM"/>
+						<t:template>
+							<m:Text text="{delivery_approval_by_pM}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Invoice Creation By"/>
+						<t:template>
+							<m:Text text="{invoice_creation_by}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Inv. Status"/>
+						<t:template>
+							<m:Text text="{inv_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Payment Status"/>
+						<t:template>
+							<m:Text text="{payment_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Remarks"/>
+						<t:template>
+							<m:Text text="{Remarks}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+			<!-- PM TABLE END -->
+			<!-- C TABLE -->
+			<t:Table id="tableid_C" visible="false" class="Ui_table_class" rows="{/data}" selectionMode="Single" selectionChange="onSelectionChange"
+				onRowPress="onRowPress" cellClick="onCellClick" rowSelectionChange="onRowSelectionChange" visibleRowCount="10" visibleRowCountMode="Fixed"
+				ariaLabelledBy="title" enableColumnFreeze="true" fixedColumnCount="2" type="active">
+				<!--<t:extension>-->
+				<!--	<m:OverflowToolbar style="Clear">-->
+				<!--		<m:Button text="create"/>-->
+				<!--	</m:OverflowToolbar>-->
+				<!--</t:extension>-->
+				<t:columns>
+					<t:Column width="11rem" hAlign="Begin">
+						<m:Label text="Consultant Name"/>
+						<t:template>
+							<m:Text text="{consultant_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Vendor Name"/>
+						<t:template>
+							<m:Text text="{vendor_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Client Name"/>
+						<t:template>
+							<m:Text text="{client_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="21rem">
+						<m:Label text="Project Name"/>
+						<t:template>
+							<m:Text text="{project_name}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Project Manager"/>
+						<t:template>
+							<m:Text text="{project_manager}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Billability Type"/>
+						<t:template>
+							<m:Text text="{billability_type}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Billability Amt/Rate"/>
+						<t:template>
+							<m:Text text="{billability_rate}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Assessment Type"/>
+						<t:template>
+							<m:Text text="{assessment_type}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Requirement"/>
+						<t:template>
+							<m:Text text="{requirment}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Begin" visible="false">
+						<m:Label text="SOW Status"/>
+						<t:template>
+							<m:Text text="{sow_status}" wrapping="false" class="sapUiTinyMarginBegin"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Onboarding Complete"/>
+						<t:template>
+							<m:Text text="{onboarding_complete}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Ready to Start"/>
+						<t:template>
+							<m:Text text="{ready_to_start}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Work Started"/>
+						<t:template>
+							<m:Text text="{work_started}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center" visible="false">
+						<m:Label text="Delivery status"/>
+						<t:template>
+							<m:Text text="{delivery_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Estimated Hrs"/>
+						<t:template>
+							<m:Text text="{estimated_hr}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Revised Hrs"/>
+						<t:template>
+							<m:Text text="{revised_hrs}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Consumed Hrs"/>
+						<t:template>
+							<m:Text text="{consumed_hrs}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Balanced Hrs"/>
+						<t:template>
+							<m:Text text="{balanced_hrs}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" hAlign="Center">
+						<m:Label text="Timesheet status"/>
+						<t:template>
+							<m:Text text="{timesheet_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="15rem" visible="false">
+						<m:Label text="Tech.Delivery Approved by (If Req.)"/>
+						<t:template>
+							<m:Text text="{tech_approval}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Delivery Approval By PM"/>
+						<t:template>
+							<m:Text text="{delivery_approval_by_pM}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Invoice Creation By"/>
+						<t:template>
+							<m:Text text="{invoice_creation_by}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Inv. Status"/>
+						<t:template>
+							<m:Text text="{inv_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem" visible="false">
+						<m:Label text="Payment Status"/>
+						<t:template>
+							<m:Text text="{payment_status}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="11rem">
+						<m:Label text="Remarks"/>
+						<t:template>
+							<m:Text text="{Remarks}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+			<!-- C TABLE END -->
+		</m:content>
+		<!--<m:footer>-->
+		<!--	<m:OverflowToolbar>-->
+		<!--		<m:ToolbarSpacer/>-->
+		<!--		<m:Button text="Request Form" class="request_but_class" press="onRequestBtn"></m:Button>-->
+		<!--<m:Button text="Add" class="add_but_class" press="onAddBtn"></m:Button>-->
+		<!--<m:Button text="Update" class="update2_but_class"></m:Button>-->
+		<!--		<m:ToolbarSpacer/>-->
+		<!--	</m:OverflowToolbar>-->
+		<!--</m:footer>-->
+	</m:Page>
+</mvc:View>

@@ -1,0 +1,175 @@
+<core:FragmentDefinition xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<Dialog id="profileInfoDialog" title="Profile Info" contentWidth="40%" class="dialog_title_class">
+		<content>
+			<VBox class="sapUiSmallMargin" id="TextVBOX">
+				<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="0" labelSpanL="0" labelSpanM="0" labelSpanS="0" columnsL="1">
+					<f:content>
+						<Label text="Domain Exp.">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{Profile_DetailsModel>/Data/DomainExp}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+						<Label text="Skills">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{Profile_DetailsModel>/Data/Skills}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+						<Label text="Base location">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{Profile_DetailsModel>/Data/Location}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+						<Label text="Contact No.">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{Profile_DetailsModel>/Data/Contact}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+						<Label text="Email Id">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{Profile_DetailsModel>/Data/Email}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+						<Label text="Profile/Hign level exp. details">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{Profile_DetailsModel>/Data/Exp_Detail}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>
+			<VBox class="sapUiSmallMargin" id="InputVBOX" visible="false">
+				<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="0" labelSpanL="0" labelSpanM="0" labelSpanS="0" columnsL="1">
+					<f:content>
+						<Label text="Domain Exp.">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<!--<Text text="{Profile_DetailsModel>/Data/DomainExp}" class="Form_padding_class" visible="{= !${Profile_DetailsModel>/isEditMode} }">-->
+						<!--	<layoutData>-->
+						<!--		<l:GridData span="XL6 L6 M6 S6"/>-->
+						<!--	</layoutData>-->
+						<!--</Text>-->
+						<Input value="{Profile_DetailsModel>/Data/DomainExp}" liveChange="onInputChange" id="DomainExp" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Input>
+						<Label text="Skills">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<!--<Text text="{Profile_DetailsModel>/Data/Skills}" class="Form_padding_class" visible="{= !${Profile_DetailsModel>/isEditMode} }">-->
+						<!--	<layoutData>-->
+						<!--		<l:GridData span="XL6 L6 M6 S6"/>-->
+						<!--	</layoutData>-->
+						<!--</Text>-->
+						<Input value="{Profile_DetailsModel>/Data/Skills}" liveChange="onInputChange" id="Skills" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Input>
+						<Label text="Base location">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<!--<Text text="{Profile_DetailsModel>/Data/Location}" class="Form_padding_class" visible="{= !${Profile_DetailsModel>/isEditMode} }">-->
+						<!--	<layoutData>-->
+						<!--		<l:GridData span="XL6 L6 M6 S6"/>-->
+						<!--	</layoutData>-->
+						<!--</Text>-->
+						<Input value="{Profile_DetailsModel>/Data/Location}" liveChange="onInputChange" id="location" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Input>
+						<Label text="Contact No.">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<!--<Text text="{Profile_DetailsModel>/Data/Contact}" class="Form_padding_class" visible="{= !${Profile_DetailsModel>/isEditMode} }">-->
+						<!--	<layoutData>-->
+						<!--		<l:GridData span="XL6 L6 M6 S6"/>-->
+						<!--	</layoutData>-->
+						<!--</Text>-->
+						<Input value="{Profile_DetailsModel>/Data/Contact}" liveChange="onInputChange" id="Contact" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Input>
+						<Label text="Email Id">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<!--<Text text="{Profile_DetailsModel>/Data/Email}" class="Form_padding_class" visible="{= !${Profile_DetailsModel>/isEditMode} }">-->
+						<!--	<layoutData>-->
+						<!--		<l:GridData span="XL6 L6 M6 S6"/>-->
+						<!--	</layoutData>-->
+						<!--</Text>-->
+						<Input value="{Profile_DetailsModel>/Data/Email}" liveChange="onInputChange" id="Email" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Input>
+						<Label text="Profile/High level exp. details">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<!--<Text text="{Profile_DetailsModel>/Data/Exp_Detail}" class="Form_padding_class" visible="{= !${Profile_DetailsModel>/isEditMode} }">-->
+						<!--	<layoutData>-->
+						<!--		<l:GridData span="XL6 L6 M6 S6"/>-->
+						<!--	</layoutData>-->
+						<!--</Text>-->
+						<Input value="{Profile_DetailsModel>/Data/Exp_Detail}" liveChange="onInputChange" id="Profile" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Input>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>
+		</content>
+		<beginButton>
+			<Button text="Edit" class="update_but_class" press="onProfileInfoDialogClose"/>
+		</beginButton>
+		<endButton>
+			<Button text="OK" class="update_but_class" press="onProfileInfoDialogEdit"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

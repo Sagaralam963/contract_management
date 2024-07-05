@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:ca="sap.ca.ui">
+	<Dialog id="add_filter_dialogId" title="Select Filters" contentWidth="40%" class="dialog_title_class">
+		<content>
+			<List id="filter_list_id" items="{Filter_model>/Filter_data}" mode="MultiSelect" select="onCheckBox">
+				<items>
+					<StandardListItem title="{Filter_model>filter}" selected="{Filter_model>isSelected}"/>
+				</items>
+			</List>
+		</content>
+		<beginButton>
+			<Button text="Select" class="update_but_class" press="on_select_filter_btn"/>
+		</beginButton>
+		<endButton>
+			<Button text="Close" class="close_but_class" press="onDialogClose_Add_filter"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

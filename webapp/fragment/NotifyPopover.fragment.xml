@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Popover title="All Notifications" placement="Bottom" showHeader="true">
+		<List id="ProjectList" items="{NotificationModel>/Notifications}">
+			<CustomListItem type="Active" press="onNotifyItemPress" visible="{path: 'NotificationModel>seen', formatter: '.formatSeen'}">
+				<HBox width="auto">
+					<core:Icon size="1rem" src="sap-icon://bell" class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom"/>
+					<VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom">
+						<Link text="User has changed {NotificationModel>oldValue} to {NotificationModel>newValue}" wrapping="true"/>
+						<!--<Label text="Date : {RequestListModel>Date}" wrapping="true"/>-->
+						<!--<Label text="Date : {path: 'RequestListModel>RaisedDateTime', formatter: '.formatDateTime'}" wrapping="true"/>-->
+					</VBox>
+				</HBox>
+			</CustomListItem>
+		</List>
+	</Popover>
+</core:FragmentDefinition>

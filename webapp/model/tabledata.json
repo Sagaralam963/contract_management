@@ -1,0 +1,488 @@
+{
+	"data": [{
+		"lineId": "001",
+		"consultant_name": "Gunjan Dalvi",
+		"vendor_name": "",
+		"client_name": "",
+		"project_name": "AMC 22_DRL_MRO WAREHOUSE MANAGMENT",
+		"project_manager": "RRP Sinha",
+		"billability_type": "T&M per Hr",
+		"billability_rate": "",
+		"assessment_type": "ABAP",
+		"requirment": "",
+		"sow_status": "Under review",
+		"onboarding_complete": "WIP",
+		"ready_to_start": "Y",
+		"work_started": "Hold",
+		"delivery_status": "Yet to start",
+		"estimated_hr": "",
+		"revised_hrs": "",
+		"consumed_hrs": "",
+		"balanced_hrs": "",
+		"timesheet_status": "WIP",
+		"tech_approval": "",
+		"delivery_approval_by_pM": "",
+		"invoice_creation_by": "Accounts",
+		"inv_status": "Prepared",
+		"payment_status": "Up to Date",
+		"Remarks": "",
+		"SOW_Details": [{
+			"Prepared_by": "1001",
+			"Preparation_Date": "01-05-2024",
+			"Reviewed_By": "Gunjan Dalvi",
+			"Approval_By": "Ajinkya Dalvi",
+			"Approved_Date": "02-05-2024",
+			"Signed_By": "Sagar Alam",
+			"Signed_Date": "02-05-2024",
+			"Remark": "Approved",
+			"SOW_Doc": "www.sow.com"
+		}],
+		"Profile_Detail": [{
+			"DomainExp": "4 Year's",
+			"Skills": "SAP ABAP",
+			"Location": "Pune",
+			"Contact": "7895412634",
+			"Email": "gunjan.dalvi@craveinfotech.com",
+			"Exp_Detail": "None"
+		}]
+	}, {
+		"lineId": "002",
+		"consultant_name": "K Ram",
+		"vendor_name": "",
+		"client_name": "",
+		"project_name": "AMC_APL_E-LOGBOOK 6 PLANT",
+		"project_manager": "Sunil Akolkar",
+		"billability_type": "Fixed",
+		"billability_rate": "",
+		"assessment_type": "UI5",
+		"requirment": "",
+		"sow_status": "Under prep",
+		"onboarding_complete": "N",
+		"ready_to_start": "N",
+		"work_started": "Y",
+		"delivery_status": "Yet to start",
+		"estimated_hr": "",
+		"revised_hrs": "",
+		"consumed_hrs": "",
+		"balanced_hrs": "",
+		"timesheet_status": "WIP",
+		"tech_approval": "",
+		"delivery_approval_by_pM": "",
+		"invoice_creation_by": "Accounts",
+		"inv_status": "Prepared",
+		"payment_status": "Up to Date",
+		"Remarks": "",
+		"SOW_Details": [{
+			"Prepared_by": "1002",
+			"Preparation_Date": "01-05-2024",
+			"Reviewed_By": "Gunjan Dalvi",
+			"Approval_By": "Ajinkya Dalvi",
+			"Approved_Date": "02-05-2024",
+			"Signed_By": "Sagar Alam",
+			"Signed_Date": "02-05-2024",
+			"Remark": "Approved",
+			"SOW_Doc": "www.sow.com"
+		}],
+		"Profile_Detail": [{
+			"DomainExp": "7.2 Year's",
+			"Skills": "SAP UI5/Fiori",
+			"Location": "Pune",
+			"Contact": "7458621247",
+			"Email": "k.ram@gmail.com",
+			"Exp_Detail": "5.2 Year's"
+
+		}]
+	}, {
+		"lineId": "003",
+		"consultant_name": "A Shaikh ",
+		"vendor_name": "",
+		"client_name": "",
+		"project_name": "AMC_BIOCON_BPL & PM_CMAINTENANCE",
+		"project_manager": "RRP Sinha",
+		"billability_type": "T&M per Hr",
+		"billability_rate": "",
+		"assessment_type": "ABAP",
+		"requirment": "",
+		"sow_status": "Reviwed",
+		"onboarding_complete": "Y",
+		"ready_to_start": "Y",
+		"work_started": "Hold",
+		"delivery_status": "Yet to start",
+		"estimated_hr": "",
+		"revised_hrs": "",
+		"consumed_hrs": "",
+		"balanced_hrs": "",
+		"timesheet_status": "WIP",
+		"tech_approval": "",
+		"delivery_approval_by_pM": "",
+		"invoice_creation_by": "Accounts",
+		"inv_status": "Prepared",
+		"payment_status": "Up to Date",
+		"Remarks": "",
+		"SOW_Details": [{
+			"Prepared_by": "1003",
+			"Preparation_Date": "01-05-2024",
+			"Reviewed_By": "Gunjan Dalvi",
+			"Approval_By": "Ajinkya Dalvi",
+			"Approved_Date": "02-05-2024",
+			"Signed_By": "Sagar Alam",
+			"Signed_Date": "02-05-2024",
+			"Remark": "Approved",
+			"SOW_Doc": "www.sow.com"
+		}],
+		"Profile_Detail": [{
+			"DomainExp": "3 Year's",
+			"Skills": "SAP ABAP",
+			"Location": "Pune",
+			"Contact": "6321478564",
+			"Email": "a604.shaikh@gmail.com",
+			"Exp_Detail": "None"
+
+		}]
+	}, {
+		"lineId": "004",
+		"consultant_name": "M Stallin",
+		"vendor_name": "",
+		"client_name": "",
+		"project_name": "AMC22_KPM_WAREHOUSE MANAGEMENT",
+		"project_manager": "Sunil Akolkar",
+		"billability_type": "Fixed",
+		"billability_rate": "",
+		"assessment_type": "PP Functional",
+		"requirment": "",
+		"sow_status": "Under sign off",
+		"onboarding_complete": "Hold",
+		"ready_to_start": "Hold",
+		"work_started": "NA",
+		"delivery_status": "Yet to start",
+		"estimated_hr": "",
+		"revised_hrs": "",
+		"consumed_hrs": "",
+		"balanced_hrs": "",
+		"timesheet_status": "WIP",
+		"tech_approval": "",
+		"delivery_approval_by_pM": "",
+		"invoice_creation_by": "Accounts",
+		"inv_status": "Prepared",
+		"payment_status": "Up to Date",
+		"Remarks": "",
+		"SOW_Details": [{
+			"Prepared_by": "1004",
+			"Preparation_Date": "01-05-2024",
+			"Reviewed_By": "Gunjan Dalvi",
+			"Approval_By": "Ajinkya Dalvi",
+			"Approved_Date": "02-05-2024",
+			"Signed_By": "Sagar Alam",
+			"Signed_Date": "02-05-2024",
+			"Remark": "Approved",
+			"SOW_Doc": "www.sow.com"
+		}],
+		"Profile_Detail": [{
+			"DomainExp": "6 Year's",
+			"Skills": "SAP PP",
+			"Location": "Hydrabad",
+			"Contact": "7845695123",
+			"Email": "Stallin504@gmail.com",
+			"Exp_Detail": "None"
+
+		}]
+	}, {
+		"lineId": "005",
+		"consultant_name": "Shubham Wane",
+		"vendor_name": "",
+		"client_name": "",
+		"project_name": "INV_DEV_CRAVE INTERNAL APPn DEV & SUPPORT",
+		"project_manager": "Kalpana Parekh",
+		"billability_type": "T&M per Hr",
+		"billability_rate": "",
+		"assessment_type": "PP Functional",
+		"requirment": "",
+		"sow_status": "Sign off",
+		"onboarding_complete": "WIP",
+		"ready_to_start": "Y",
+		"work_started": "Y",
+		"delivery_status": "Yet to start",
+		"estimated_hr": "",
+		"revised_hrs": "",
+		"consumed_hrs": "",
+		"balanced_hrs": "",
+		"timesheet_status": "WIP",
+		"tech_approval": "",
+		"delivery_approval_by_pM": "",
+		"invoice_creation_by": "Accounts",
+		"inv_status": "Prepared",
+		"payment_status": "Up to Date",
+		"Remarks": "",
+		"SOW_Details": [{
+			"Prepared_by": "1005",
+			"Preparation_Date": "01-05-2024",
+			"Reviewed_By": "Gunjan Dalvi",
+			"Approval_By": "Ajinkya Dalvi",
+			"Approved_Date": "02-05-2024",
+			"Signed_By": "Sagar Alam",
+			"Signed_Date": "02-05-2024",
+			"Remark": "Approved",
+			"SOW_Doc": "www.sow.com"
+		}],
+		"Profile_Detail": [{
+			"DomainExp": "2 Year's",
+			"Skills": "SAP PP Functional",
+			"Location": "Banglore",
+			"Contact": "9568752147",
+			"Email": "Shubham.wane@gmail.com",
+			"Exp_Detail": "4 Year's"
+		}]
+	}],
+	"Filter_data": [{
+		"filter": "Consultant Name",
+		"isSelected": false
+
+	}, {
+		"filter": "Vendor Name",
+		"isSelected": false
+
+	}, {
+		"filter": "Client Name",
+		"isSelected": false
+
+	}, {
+		"filter": "Project Name",
+		"isSelected": false
+
+	}, {
+		"filter": "Project Manager",
+		"isSelected": false
+
+	}, {
+		"filter": "Billability Type",
+		"isSelected": false
+
+	}, {
+		"filter": "Billability Amt/Rate",
+		"isSelected": false
+
+	}, {
+		"filter": "Assessment Type",
+		"isSelected": false
+
+	}, {
+		"filter": "Requirement",
+		"isSelected": false
+
+	}, {
+		"filter": "SOW Status",
+		"isSelected": false
+
+	}, {
+		"filter": "Onboarding Complete",
+		"isSelected": false
+
+	}, {
+		"filter": "Ready to Start",
+		"isSelected": false
+
+	}, {
+		"filter": "Work Started",
+		"isSelected": false
+
+	}, {
+		"filter": "Delivery status",
+		"isSelected": false
+
+	}, {
+		"filter": "Estimated Hr",
+		"isSelected": false
+
+	}, {
+		"filter": "Revised Hrs",
+		"isSelected": false
+
+	}, {
+		"filter": "Consumed Hrs",
+		"isSelected": false
+
+	}, {
+		"filter": "Balanced Hrs",
+		"isSelected": false
+
+	}, {
+		"filter": "Timesheet status",
+		"isSelected": false
+
+	}, {
+		"filter": "Tech.Delivery Approved by (If Req.)",
+		"isSelected": false
+
+	}, {
+		"filter": "Delivery Approval By PM",
+		"isSelected": false
+
+	}, {
+		"filter": "Invoice Creation By",
+		"isSelected": false
+
+	}, {
+		"filter": "Inv. Status",
+		"isSelected": false
+
+	}, {
+		"filter": "Payment Status",
+		"isSelected": false
+
+	}],
+	"Filter_data_AC": [{
+		"filter": "Consultant Name",
+		"isSelected": false
+
+	}, {
+		"filter": "Client Name",
+		"isSelected": false
+
+	}, {
+		"filter": "Project Name",
+		"isSelected": false
+
+	}, {
+		"filter": "Project Manager",
+		"isSelected": false
+
+	}, {
+		"filter": "Billability Type",
+		"isSelected": false
+
+	}, {
+		"filter": "Billability Amt/Rate",
+		"isSelected": false
+
+	}, {
+		"filter": "Requirement",
+		"isSelected": false
+
+	}, {
+		"filter": "Consumed Hrs",
+		"isSelected": false
+
+	}, {
+		"filter": "Balanced Hrs",
+		"isSelected": false
+
+	}, {
+		"filter": "Timesheet status",
+		"isSelected": false
+
+	}, {
+		"filter": "Invoice Creation By",
+		"isSelected": false
+
+	}, {
+		"filter": "Inv. Status",
+		"isSelected": false
+
+	}, {
+		"filter": "Payment Status",
+		"isSelected": false
+
+	}],
+	"Filter_data_PM": [{
+		"filter": "Consultant Name",
+		"isSelected": false
+
+	}, {
+		"filter": "Vendor Name",
+		"isSelected": false
+
+	}, {
+		"filter": "Client Name",
+		"isSelected": false
+
+	}, {
+		"filter": "Project Name",
+		"isSelected": false
+
+	}, {
+		"filter": "Project Manager",
+		"isSelected": false
+
+	}, {
+		"filter": "Assessment Type",
+		"isSelected": false
+
+	}, {
+		"filter": "Requirement",
+		"isSelected": false
+
+	}, {
+		"filter": "Work Started",
+		"isSelected": false
+
+	}, {
+		"filter": "Delivery status",
+		"isSelected": false
+
+	}, {
+		"filter": "Estimated Hr",
+		"isSelected": false
+
+	}, {
+		"filter": "Revised Hrs",
+		"isSelected": false
+
+	}, {
+		"filter": "Consumed Hrs",
+		"isSelected": false
+
+	}, {
+		"filter": "Balanced Hrs",
+		"isSelected": false
+
+	}, {
+		"filter": "Timesheet status",
+		"isSelected": false
+
+	}, {
+		"filter": "Tech.Delivery Approved by (If Req.)",
+		"isSelected": false
+
+	}, {
+		"filter": "Delivery Approval By PM",
+		"isSelected": false
+
+	}],
+	"Filter_data_C": [{
+		"filter": "Consultant Name",
+		"isSelected": false
+
+	}, {
+		"filter": "Project Name",
+		"isSelected": false
+
+	}, {
+		"filter": "Project Manager",
+		"isSelected": false
+
+	}, {
+		"filter": "Requirement",
+		"isSelected": false
+
+	}, {
+		"filter": "Ready to Start",
+		"isSelected": false
+
+	}, {
+		"filter": "Consumed Hrs",
+		"isSelected": false
+
+	}, {
+		"filter": "Balanced Hrs",
+		"isSelected": false
+
+	}, {
+		"filter": "Timesheet status",
+		"isSelected": false
+
+	}, {
+		"filter": "Invoice Creation By",
+		"isSelected": false
+
+	}]
+}

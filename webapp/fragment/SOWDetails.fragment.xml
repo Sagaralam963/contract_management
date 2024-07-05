@@ -1,0 +1,109 @@
+<core:FragmentDefinition xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<Dialog id="SWODetailDialog" title="SOW Details" contentWidth="40%" class="dialog_title_class">
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="0" labelSpanL="0" labelSpanM="0" labelSpanS="0" columnsL="1">
+					<f:content>
+						<Label text="Prepared by">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{SOW_DetailsModel>/Data/Prepared_by}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+						<Label text="Preparation Date">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{SOW_DetailsModel>/Data/Preparation_Date}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+						<Label text="Reviewed By">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{SOW_DetailsModel>/Data/Reviewed_By}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+						<Label text="Approval By">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{SOW_DetailsModel>/Data/Approval_By}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+						<Label text="Approved Date">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{SOW_DetailsModel>/Data/Approved_Date}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+						<Label text="Signed By">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{SOW_DetailsModel>/Data/Signed_By}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+						<Label text="Signed Date">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{SOW_DetailsModel>/Data/Signed_Date}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+						<Label text="Remark/Comment">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Text text="{SOW_DetailsModel>/Data/Remark}" class="Form_padding_class">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Text>
+						<Label text="SOW Doc lInk">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Label>
+						<Link text="{SOW_DetailsModel>/Data/SOW_Doc}">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</Link>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>
+		</content>
+		<beginButton>
+			<Button text="OK" class="update_but_class" press="onSOWDialogClose"/>
+		</beginButton>
+		<!--<endButton>-->
+		<!--	<Button text="Close" class="close_but_class" press="onDialogCloseUpload"/>-->
+		<!--</endButton>-->
+	</Dialog>
+</core:FragmentDefinition>

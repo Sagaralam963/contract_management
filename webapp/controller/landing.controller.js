@@ -18,6 +18,8 @@ sap.ui.define([
 
 		onInit: function () {
 
+			// new 
+
 			var oRouter = this.getOwnerComponent().getRouter();
 			oRouter.getRoute("landing").attachPatternMatched(this.onObjectMatched, this);
 			// var oData = this.getOwnerComponent().getModel().getData();
